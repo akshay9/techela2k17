@@ -1,1 +1,0 @@
-# techela2k17

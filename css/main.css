@@ -1,68 +1,108 @@
+body {
+  height: 100vh; }
+
+#cloud-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -1;
+  /* Remove this line if it's not going to be a background! */ }
+
+.page, #home, #events {
+  min-height: 100%;
+  width: 100%; }
+
+#home .logo {
+  position: fixed;
+  top: 45%;
+  left: 40%; }
+
+#team {
+  background-color: black; }
+
+/*
 .horizon {
   line-height: 0;
   z-index: 100;
-  width: 2512.5px; }
+  //width: 3000px;
+  width: $layer3-width;
+}
 
 .middle {
   z-index: 250;
   line-height: 0;
-  width: 3750px; }
+  //width: 4500px;
+  width: $layer2-width;
+}
 
 .front {
   z-index: 500;
   top: 150px;
-  width: 5000px; }
+  //width: 6000px;
+  width: $layer1-width;
+}
 
-.intro {
+.intro
+{
   position: absolute;
   left: 500px;
   top: 0px;
   padding-right: 50px;
-  background: url("../images/scroll.png") no-repeat right 5px; }
-
-.fullpage {
+  background: url('../images/scroll.png') no-repeat right 5px;
+}
+.fullpage
+{
   top: 0px;
-  width: 1000px;
+  width: $pageWidth;
   background: white;
   padding: 10px 30px;
   margin: auto 25px;
   border: 1px #eee solid;
-  position: absolute; }
-
-.page {
+  position: absolute;
+}
+.page
+{
   top: 0px;
   width: 500px;
   background: white;
   padding: 10px 30px;
   border: 1px #eee solid;
-  position: absolute; }
+  position: absolute;
+}
 
-.description {
-  left: 1000px; }
+.description
+{
+  left: get-left-margin(1);
+}
 
-.documentation {
-  left: 2000px;
-  width: 700px; }
-
-.options {
+.documentation
+{
+  left: get-left-margin(2);
   width: 700px;
-  left: 3000px; }
+}
 
-.download {
+.options
+{
+  width: 700px;
+  left: get-left-margin(3);
+}
+
+.download
+{
   width: 500px;
-  left: 4000px; }
+  left: get-left-margin(4);
+}
 
-.license {
-  padding: 100px 30px 30px 30px; }
-
+.license
+{
+  padding: 100px 30px 30px 30px;
+}
+*/
 /* jInvertScroll.js css */
 /* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
-body {
-  overflow-x: hidden; }
-
-body::-webkit-scrollbar {
-  display: none; }
-
 /**
   * important: keep position fixed, you can however use top:0 instead of bottom:0
   * if you want to make it stick to the top of the browser

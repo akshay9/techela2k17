@@ -25,7 +25,7 @@ $(document).ready(function(){
         .fromTo(".layer3.page", 4, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0) // in from left
         .fromTo(".layer2.page", 3, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0)  // in from right
         .fromTo(".layer1.page", 2, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0)
-        .fromTo(".layer0.page", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0);
+        .fromTo(".layer0.page", 4, {x: "0%"}, {x: "-630%", ease: Linear.easeNone}, 0);
 
     var eventsScene = new ScrollMagic.Scene({
         triggerElement: "#events",
@@ -36,6 +36,13 @@ $(document).ready(function(){
         .setClassToggle("#eventLink", "active")
         .setTween(eventsTimeline) // trigger a TweenMax.to tween
         .addIndicators({name: "2 (duration: 300%)"}) // add indicators (requires plugin)
+        .addTo(controller);
+    var eventsScene2 = new ScrollMagic.Scene({
+        triggerElement: "#events",
+        triggerHook: "onLeave",
+        duration: "400%"
+    })
+        .setClassToggle("nav.navbar", "navbar-dark")
         .addTo(controller);
 
 

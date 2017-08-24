@@ -15,10 +15,21 @@ body {
   min-height: 100%;
   width: 100%; }
 
-#home .logo {
-  position: fixed;
-  top: 45%;
-  left: 40%; }
+.box-link {
+  position: absolute; }
+
+#home {
+  box-shadow: 0px 5px 9px 0px #b1afaf; }
+  #home .logo {
+    position: fixed;
+    top: 45%;
+    left: 40%;
+    z-index: 10000; }
+
+#events {
+  box-shadow: 0px 5px 9px 0px #b1afaf; }
+  #events .layer0 img {
+    height: 100vh; }
 
 #team {
   background-color: black; }

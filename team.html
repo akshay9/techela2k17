@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Avinash Barfa">
+    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <title>Techela 2k17</title>
+    
+    <link rel="stylesheet" href="css/team.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="thumbs">
+            <div class="background-layer">
+                <div class="item1">
+                    <h1>hello</h1>
+                </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    var cntWd, sldWd, tb;
+    $(function() {
+        
+        cntWd = $('#container').innerWidth();
+        tb = $('#thumbs');
+        sldWd = tb.outerWidth();
+        
+        $('#container').mousemove(function(e)
+        {
+            tb.css({left: ((cntWd - sldWd)*((e.pageX / cntWd).toFixed(3))).toFixed(1) +"px" });
+
+        });
+});
+</script>
+</html>

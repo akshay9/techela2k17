@@ -1,0 +1,28 @@
+*{margin: 0;padding: 0;height: 100%}
+
+#container {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	#overflow-x: scroll;
+}
+
+#thumbs {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 0;
+}
+
+.background-layer {
+	background : url(../images/full.jpg);
+	height: 100%;
+	color: #fff;
+	width:  4000px;
+
+}

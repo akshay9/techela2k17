@@ -9,20 +9,126 @@
     <meta charset="UTF-8">
     <title>Techela 2k17</title>
     
-    <link rel="stylesheet" href="css/team.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/team.css">    
 </head>
 
 <body>
-    <div id="container">
-        <div id="thumbs">
+
+    <div id="container" class="container">
+        <div id="thumbs" class="thumbs">
             <div class="background-layer">
-                <div class="item1">
-                    <h1>hello</h1>
+                <div class="team technical">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#technical">Technical</button>
                 </div>
+                <div class="team publicity">
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#sponsor">Sponser</button>
+                </div>
+                <div class="team sponsor">
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#publicity">Publicty</button>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+     <!-- Modal -->
+    <div class="modal fade" id="technical" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
+                    <h4 class="modal-title">Technical Team</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Avinash Barfa</h4>
+                            <h4>Co-Head</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Avinash Barfa</h4>
+                            <h4>Co-Head</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Avinash Barfa</h4>
+                            <h4>Co-Head</h4>
+                        </div>  
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sponsor" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
+                    <h4 class="modal-title">Sponser Team</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>bawa</h4>
+                            <h4>Co-Head</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Aashna Mehta</h4>
+                            <h4>Head</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Avinash Barfa</h4>
+                            <h4>Co-Head</h4>
+                        </div>  
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="publicity" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
+                    <h4 class="modal-title">Publicity</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>bawa</h4>
+                            <h4>Co-Head</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Samartha Narang</h4>
+                            <h4>Head</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Avinash Barfa</h4>
+                            <h4>Co-Head</h4>
+                        </div>  
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
     var cntWd, sldWd, tb;
     $(function() {
@@ -37,5 +143,6 @@
 
         });
 });
+
 </script>
 </html>

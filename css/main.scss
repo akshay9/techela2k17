@@ -16,6 +16,7 @@ html{
 
 body {
   height: 100vh;
+  overflow-x: hidden;
 }
 
 #cloud-container{
@@ -39,11 +40,22 @@ body {
 #home {
   @extend .page;
   box-shadow: 0px 5px 9px 0px rgb(177, 175, 175);
+  background-color: #111;
   .logo {
     position: fixed;
-    top: 45%;
+    top: 40%;
     left: 40%;
+    text-align: center;
     z-index: 10000;
+    h1 {
+      color: white;
+    }
+    .description {
+      color: #ebebeb;
+      position: relative;
+      overflow-x: hidden;
+      white-space: nowrap;
+    }
   }
 }
 
@@ -57,6 +69,12 @@ body {
 
 #team {
   background-color: black;
+}
+
+.hidden {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 /*

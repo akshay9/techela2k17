@@ -22,6 +22,9 @@
 # CMake
 cmake-build-debug/
 
+# psd
+psd/
+
 # Mongo Explorer plugin:
 .idea/**/mongoSettings.xml
 

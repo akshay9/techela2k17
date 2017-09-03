@@ -1,5 +1,6 @@
 body {
-  height: 100vh; }
+  height: 100vh;
+  overflow-x: hidden; }
 
 #cloud-container {
   position: absolute;
@@ -19,12 +20,21 @@ body {
   position: absolute; }
 
 #home {
-  box-shadow: 0px 5px 9px 0px #b1afaf; }
+  box-shadow: 0px 5px 9px 0px #b1afaf;
+  background-color: #111; }
   #home .logo {
     position: fixed;
-    top: 45%;
+    top: 40%;
     left: 40%;
+    text-align: center;
     z-index: 10000; }
+    #home .logo h1 {
+      color: white; }
+    #home .logo .description {
+      color: #ebebeb;
+      position: relative;
+      overflow-x: hidden;
+      white-space: nowrap; }
 
 #events {
   box-shadow: 0px 5px 9px 0px #b1afaf; }
@@ -33,6 +43,11 @@ body {
 
 #team {
   background-color: black; }
+
+.hidden {
+  display: none;
+  width: 0;
+  height: 0; }
 
 /*
 .horizon {

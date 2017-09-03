@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: red;
+}
+.container-fluid {
+	padding: 0;
+	margin: 0;
+}
+
+.contact-section {
+	/*background: url(../images/cloud.jpg);*/
+	background-color: purple;
+	width: 100%;
+	color: #fff;
+	font-family: 600;
+}
+
+.col-md-12 {
+	background-color: transparent;
+}
+.heading {
+}
+
+.contact-section .contact-info {
+
+} 
+
+
+.parallax {
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

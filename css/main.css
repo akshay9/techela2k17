@@ -17,14 +17,15 @@ body {
   width: 100%; }
 
 .box-link {
-  position: absolute; }
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.7); }
 
 #home {
   box-shadow: 0px 5px 9px 0px #b1afaf;
   background-color: #111; }
   #home .logo {
     position: fixed;
-    top: 40%;
+    top: 35%;
     left: 40%;
     text-align: center;
     z-index: 10000; }
@@ -35,6 +36,20 @@ body {
       position: relative;
       overflow-x: hidden;
       white-space: nowrap; }
+  #home #register-btn {
+    position: absolute;
+    top: 55%;
+    left: 45%; }
+    #home #register-btn .btn {
+      width: 225px; }
+  #home .btn-outline-light:hover {
+    color: #000 !important; }
+  #home .scroll-down {
+    position: absolute;
+    height: 60px;
+    bottom: 5px;
+    left: 50%;
+    opacity: 0.7; }
 
 #events {
   box-shadow: 0px 5px 9px 0px #b1afaf; }

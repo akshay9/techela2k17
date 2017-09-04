@@ -9,10 +9,12 @@ $(document).ready(function(){
             width: 3
         },
         line: {
-            color: 'rgba(255, 0, 0, .5)'
+            color: 'rgba(255, 0, 0, .6)'
         },
         radius: 250
     });
+
+    TweenMax.fromTo(".scroll-down", 2.5,{ y: -40}, { ease: Bounce.easeOut, y: 0, repeat: -1 });
 
     // init controller
     var controller = new ScrollMagic.Controller();
@@ -22,6 +24,7 @@ $(document).ready(function(){
         .to("#home .logo", 0.5,  {left: "5", position: "fixed", ease: Power3.easeOut }, 0)
         .to("#home .logo", 0.5,  {top: "5" }, 0)
         .to("#home .description", 0.5,  {width: "0", opacity:0 }, 0)
+        .to("#register-btn", 0.5,  {opacity:0 }, 0)
         .to(window, 0.5,  {scrollTo: "#events"}, 0);
 
     var scene = new ScrollMagic.Scene({
@@ -64,9 +67,9 @@ $(document).ready(function(){
     new ScrollMagic.Scene({triggerElement: "#sponsor", triggerHook: "onLeave", duration: "100%"})
         .setClassToggle("#sponsorLink", "active") // add class toggle
         .addTo(controller);
-    new ScrollMagic.Scene({triggerElement: "#team", triggerHook: "onLeave", duration: "100%"})
-        .setClassToggle("#teamLink", "active") // add class toggle
-        .addTo(controller);
+    // new ScrollMagic.Scene({triggerElement: "#team", triggerHook: "onLeave", duration: "100%"})
+    //     .setClassToggle("#teamLink", "active") // add class toggle
+    //     .addTo(controller);
 
     $(document).on("click", "a[href^='#']", function (e) {
         var id = $(this).attr("href");

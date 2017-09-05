@@ -2,42 +2,128 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	background-color: red;
 }
+
 .container-fluid {
 	padding: 0;
 	margin: 0;
 }
 
-.contact-section {
-	/*background: url(../images/cloud.jpg);*/
-	background-color: purple;
-	width: 100%;
+.page-title {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.sub-title {
+	margin: 0 0 10px;
+	font-size: 15px;
+    color: #777;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.contact-info {
+	margin-top: 200px;
+	margin-left : 124px;
+	margin-right: 124px;
+}
+
+.contact-info p {
+	margin: 0 0 10px;
+    text-decoration: none;
+    margin-top: 16px;
+}
+
+.contact-info a:hover {
+	text-decoration: none;
+}
+.footer {
+	background-color: #f5f5f5;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 40px;
+}
+
+.social-links {
+	margin: 50px auto;
+    width: 240px;
+    text-align: center;
+}
+
+
+.icon {
+	position:relative;
+	text-align:center;
+	width:0px;
+	height:0px;
+	padding:20px;
+	border-top-right-radius: 	20px;
+	border-top-left-radius: 	20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 	20px; 
+	-moz-border-radius: 		20px 20px 20px 20px;
+	-webkit-border-radius: 		20px 20px 20px 20px;
+	-khtml-border-radius: 		20px 20px 20px 20px; 	
+	color:#FFFFFF;
+}
+.icon i {
+	font-size:20px;
+	position:absolute;
+	left:9px;
+	top:10px;
+}
+
+.icon i:hover {
 	color: #fff;
-	font-family: 600;
+}
+.icon.social {
+	float:left;
+	margin:0 5px 0 0;
+	cursor:pointer;
+	background:#6d6e71 ;
+	margin: 0 8px;
+	color: #262626;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+.icon.social a{
+	color: #262626;
+}
+.icon.social:hover {
+	background:#262626 ;
+	color:#6d6e71;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-moz-filter: drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-ms-filter: drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-o-filter: drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	filter: drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
+}
+.icon.social.fb i {
+	left:13px;
+	top:10px;
+}
+.icon.social.tw i {
+	left:11px;
+}
+.icon.social.in i {
+	left:11px;
+}
+.icon.social.snap i {
+	left:11px;
 }
 
-.col-md-12 {
-	background-color: transparent;
-}
-.heading {
-}
-
-.contact-section .contact-info {
-
-} 
-
-
-.parallax {
-    /* The image used */
-    background-image: url("img_parallax.jpg");
-
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.copy-right {
+	margin-top: 50px;
+	color: #777;
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    font-family: 'Dosis', arial, sans-serif;
+    text-transform: uppercase;
 }

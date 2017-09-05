@@ -24,10 +24,10 @@ body {
 }
 
 .background-layer {
-	background : url(../images/full.jpg);
+	background : url(../images/source.gif) ; background-repeat: none;
 	height: 100%;
 	color: #fff;
-	width:  4000px;
+	width:  2500px;
 
 }
 .team {
@@ -46,7 +46,9 @@ ul {
 }
 
 .logo {
-
+  font-family: pirulen;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 
 }
 
@@ -85,10 +87,28 @@ ul {
 	transition: 0.4s ease;
 }
 
+.modal {
+	top : 36px;
+	font-family: pirulen;
+  	text-transform: uppercase;
+  	letter-spacing: 0.2em;
+
+}
+
+.modal-header {
+	border: none;
+}
+.modal-lg {
+    width: 1076px;
+}    
 .modal .modal-content {
 	color: #fff;
 	background-color: #000000;
 	text-align: center;
+}
+
+.modal-title {
+	font-size: 26px;
 }
 .modal .modal-footer {
 	border-top: none;
@@ -121,4 +141,8 @@ ul {
   opacity: 1;
   transition: .5s ease;
   background-color: transparent;
-  }
+  font-family: pirulen;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+}

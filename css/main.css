@@ -97,7 +97,8 @@ body {
   #events2 div.row {
     margin-top: 1em; }
   #events2 .frame {
-    overflow: hidden; }
+    overflow: hidden;
+    cursor: pointer;   }
     #events2 .frame:hover img {
       transform: scale(1.2, 1.2); }
     #events2 .frame:hover .img-fill {

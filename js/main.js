@@ -32,11 +32,16 @@ $(document).ready(function(){
         //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
         .addTo(controller);
 
+    new_width = 16670 / (1080 / window.innerHeight);
+    pages = (new_width/window.innerWidth) - 1;
+
     var eventsTimeline = new TimelineMax()
-        .fromTo(".layer3.page", 4, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0) // in from left
-        .fromTo(".layer2.page", 3, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0)  // in from right
-        .fromTo(".layer1.page", 2, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0)
-        .fromTo(".layer0.page", 4, {x: "0%"}, {x: "-630%", ease: Linear.easeNone}, 0);
+        // .fromTo(".layer3.page", 4, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0) // in from left
+        // .fromTo(".layer2.page", 3, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0)  // in from right
+        // .fromTo(".layer1.page", 2, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0)
+        // .fromTo(".layer0.page", 4, {x: "0%"}, {x: "-630%", ease: Linear.easeNone}, 0);
+        .fromTo(".layer0.page", 4, {x: "0%"}, {x: "-" + (pages * 100) +"%", ease: Linear.easeNone}, 0);
+        // .fromTo(".layer0.page", 4, {x: "0%"}, {x: (-16670+window.innerWidth) + "", ease: Linear.easeNone}, 0);
 
     var eventsScene = new ScrollMagic.Scene({
         triggerElement: "#events",
@@ -62,7 +67,7 @@ $(document).ready(function(){
     new ScrollMagic.Scene({triggerElement: "#home", triggerHook: "onLeave", duration: "100%"})
         .setClassToggle("#homeLink", "active") // add class toggle
         .addTo(controller);
-    new ScrollMagic.Scene({triggerElement: "#events", triggerHook: "onLeave", duration: "600%"})
+    new ScrollMagic.Scene({triggerElement: "#events", triggerHook: "onLeave", duration: "500%"})
         .setClassToggle("#eventLink", "active") // add class toggle
         .addTo(controller);
     new ScrollMagic.Scene({triggerElement: "#sponsor", triggerHook: "onLeave", duration: "100%"})

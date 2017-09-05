@@ -1,7 +1,3 @@
-(function($) {
-    //$.jInvertScroll(['.scroll'], {width:});
-}(jQuery));
-
 $(document).ready(function(){
 
     $('#home').find('canvas').constellation({
@@ -21,8 +17,9 @@ $(document).ready(function(){
 
 
     var logoTimeline = new TimelineMax()
-        .to("#home .logo", 0.5,  {left: "5", position: "fixed", ease: Power3.easeOut }, 0)
-        .to("#home .logo", 0.5,  {top: "5" }, 0)
+        .to("#home .logo", 0.5,  {left: "10", position: "fixed", ease: Power3.easeOut }, 0)
+        .to("#home .logo", 0.5,  {top: "10" }, 0)
+        .to("#home .logo h1", 0.5,  {'font-size': "2.5em" }, 0)
         .to("#home .description", 0.5,  {width: "0", opacity:0 }, 0)
         .to("#register-btn", 0.5,  {opacity:0 }, 0)
         .to(window, 0.5,  {scrollTo: "#events"}, 0);
@@ -47,22 +44,26 @@ $(document).ready(function(){
         duration: "400%"
     })
         .setPin("#events")
-        .setClassToggle("#eventLink", "active")
+        // .setClassToggle("#eventLink", "active")
         .setTween(eventsTimeline) // trigger a TweenMax.to tween
         //.addIndicators({name: "2 (duration: 300%)"}) // add indicators (requires plugin)
         .addTo(controller);
-    var eventsScene2 = new ScrollMagic.Scene({
-        triggerElement: "#events",
-        triggerHook: "onLeave",
-        duration: "400%"
-    })
-        //.setClassToggle("nav.navbar", "navbar-dark")
-        .addTo(controller);
+    // var eventsScene2 = new ScrollMagic.Scene({
+    //     triggerElement: "#events",
+    //     triggerHook: "onLeave",
+    //     duration: "400%"
+    // })
+    //     //.setClassToggle("nav.navbar", "navbar-dark")
+    //     .addTo(controller);
+
 
 
     // Menu Handler
     new ScrollMagic.Scene({triggerElement: "#home", triggerHook: "onLeave", duration: "100%"})
         .setClassToggle("#homeLink", "active") // add class toggle
+        .addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#events", triggerHook: "onLeave", duration: "600%"})
+        .setClassToggle("#eventLink", "active") // add class toggle
         .addTo(controller);
     new ScrollMagic.Scene({triggerElement: "#sponsor", triggerHook: "onLeave", duration: "100%"})
         .setClassToggle("#sponsorLink", "active") // add class toggle

@@ -1,6 +1,13 @@
+@font-face {
+  font-family: titleFont;
+  src: url("../fonts/Victorious.ttf"); }
 body {
   height: 100vh;
   overflow-x: hidden; }
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 1.08em;
+  font-family: 'Cinzel', cursive; }
 
 #cloud-container {
   position: absolute;
@@ -18,7 +25,30 @@ body {
 
 .box-link {
   position: absolute;
-  background-color: rgba(255, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 3px solid #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  opacity: 0.0;
+  filter: alpha(opacity=0); }
+  .box-link span {
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: absolute;
+    color: #fff;
+    font-size: 2.7em;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -10% 0 0 -25%; }
+  .box-link:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
 
 #home {
   box-shadow: 0px 5px 9px 0px #b1afaf;
@@ -26,22 +56,27 @@ body {
   #home .logo {
     position: fixed;
     top: 35%;
-    left: 40%;
+    left: 39%;
     text-align: center;
     z-index: 10000; }
     #home .logo h1 {
+      font-size: 3.6em;
+      font-family: 'Courgette', cursive;
       color: white; }
     #home .logo .description {
+      font-family: 'Open Sans Condensed', sans-serif;
       color: #ebebeb;
       position: relative;
       overflow-x: hidden;
       white-space: nowrap; }
+      #home .logo .description h3 {
+        font-size: 2.7em; }
   #home #register-btn {
     position: absolute;
     top: 55%;
-    left: 45%; }
+    left: 44.7%; }
     #home #register-btn .btn {
-      width: 225px; }
+      width: 230px; }
   #home .btn-outline-light:hover {
     color: #000 !important; }
   #home .scroll-down {
@@ -52,9 +87,49 @@ body {
     opacity: 0.7; }
 
 #events {
-  box-shadow: 0px 5px 9px 0px #b1afaf; }
+  box-shadow: 0px 5px 9px 0px #1b1e21; }
   #events .layer0 img {
     height: 100vh; }
+
+#events2 {
+  color: #fff;
+  background-color: #212529; }
+  #events2 h2 {
+    text-align: center;
+    font-family: cursive; }
+  #events2 div.row {
+    margin-top: 1em; }
+  #events2 .frame {
+    overflow: hidden; }
+    #events2 .frame:hover img {
+      transform: scale(1.2, 1.2); }
+    #events2 .frame:hover .img-fill {
+      background-color: rgba(27, 30, 33, 0.75); }
+    #events2 .frame:hover .img-caption {
+      opacity: 1.0;
+      filter: alpha(opacity=100);
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+  #events2 .img-fill {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+  #events2 .img-caption {
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: absolute;
+    color: #fff;
+    font-size: 2.7em;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -10% 0 0 -25%;
+    opacity: 0;
+    filter: alpha(opacity=0); }
 
 #team {
   background-color: black; }

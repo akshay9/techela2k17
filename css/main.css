@@ -358,4 +358,10 @@ body {
     -webkit-transition-property: all;
     transition-property: all;
 }
+
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    color: #202427;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.65);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 /*--  --*/

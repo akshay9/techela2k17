@@ -24,7 +24,7 @@ body {
 }
 
 .background-layer {
-	background : url(../images/source.gif) ; background-repeat: none;
+	background : url(../images/team-background.jpg) ; background-repeat: none;
 	height: 100%;
 	color: #fff;
 	width:  2500px;
@@ -112,6 +112,8 @@ ul {
 }
 .modal .modal-footer {
 	border-top: none;
+	font-family: 'Creepster', cursive;
+	letter-transform : uppercase;
 }
 
 .modal .modal-footer button {

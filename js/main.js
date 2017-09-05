@@ -67,7 +67,7 @@ $(document).ready(function(){
     new ScrollMagic.Scene({triggerElement: "#home", triggerHook: "onLeave", duration: "100%"})
         .setClassToggle("#homeLink", "active") // add class toggle
         .addTo(controller);
-    new ScrollMagic.Scene({triggerElement: "#events", triggerHook: "onLeave", duration: "500%"})
+    new ScrollMagic.Scene({triggerElement: "#events", triggerHook: "onLeave", duration: "600%"})
         .setClassToggle("#eventLink", "active") // add class toggle
         .addTo(controller);
     new ScrollMagic.Scene({triggerElement: "#sponsor", triggerHook: "onLeave", duration: "100%"})

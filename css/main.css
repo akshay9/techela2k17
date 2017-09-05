@@ -1,6 +1,3 @@
-@font-face {
-  font-family: titleFont;
-  src: url("../fonts/Victorious.ttf"); }
 body {
   height: 100vh;
   overflow-x: hidden; }
@@ -92,7 +89,8 @@ body {
 
 #events2 {
   color: #fff;
-  background-color: #212529; }
+  background-color: #212529;
+  box-shadow: 0px 5px 9px 0px #1b1e21; }
   #events2 h2 {
     text-align: center;
     font-family: cursive; }
@@ -132,6 +130,107 @@ body {
 
 #team {
   background-color: black; }
+
+#sponsor {
+  background-color: #343a40;
+  box-shadow: inset 0px 5px 9px 0px #1b1e21;
+  color: #fff; }
+
+#contact {
+  box-shadow: 0px -5px 9px 0px rgba(33, 37, 41, 0.33); }
+  #contact .page-title {
+    margin-top: 40px;
+    text-align: center; }
+  #contact .sub-title {
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: #777;
+    line-height: 1.7;
+    font-weight: 300; }
+  #contact .contact-info {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 124px;
+    margin-right: 124px; }
+    #contact .contact-info p {
+      margin: 0 0 10px;
+      text-decoration: none;
+      margin-top: 16px; }
+    #contact .contact-info a:hover {
+      text-decoration: none; }
+
+#footer {
+  text-align: center;
+  background-color: #ddd;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 40px; }
+  #footer .social-links {
+    margin: 50px auto;
+    width: 240px;
+    text-align: center; }
+  #footer .icon {
+    position: relative;
+    text-align: center;
+    width: 0px;
+    height: 0px;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -khtml-border-radius: 20px 20px 20px 20px;
+    color: #FFFFFF; }
+  #footer .icon i {
+    font-size: 20px;
+    position: absolute;
+    left: 9px;
+    top: 10px; }
+  #footer .icon i:hover {
+    color: #fff; }
+  #footer .icon.social {
+    float: left;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+    background: #6d6e71;
+    margin: 0 8px;
+    color: #262626;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; }
+  #footer .icon.social a {
+    color: #262626; }
+  #footer .icon.social:hover {
+    background: #262626;
+    color: #6d6e71;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+    -moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+    -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8)); }
+  #footer .icon.social.fb i {
+    left: 13px;
+    top: 10px; }
+  #footer .icon.social.tw i {
+    left: 11px; }
+  #footer .icon.social.in i {
+    left: 11px; }
+  #footer .icon.social.snap i {
+    left: 11px; }
+  #footer .copy-right {
+    margin-top: 50px;
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    font-family: 'Dosis', arial, sans-serif;
+    text-transform: uppercase; }
 
 .hidden {
   display: none;

@@ -75,8 +75,9 @@
     <div class="container">
         <div class="row">
             <div class="logo">
-                <h1 class="">Techela 3.0</h1>
+                <img src="images/logo-blue.png">
                 <div class="description">
+                    <h1 class="">Techela 3.0</h1>
                     <h3>Served with Cookies in .jars</h3>
                     <h4 class="mt-1">22nd-23rd September 2017</h4>
                 </div>
@@ -86,6 +87,10 @@
             </a>
         </div>
         <a href="#events"> <img class="scroll-down" src="images/ic_keyboard_arrow_down_white_24dp_2x.png"></a>
+    </div>
+    <div class=" invisible sponsors">
+        <h6>Sponsored by</h6>
+        <img src="images/sponsors/Emo-Creation-Logo.svg" style="max-height: 35px">
     </div>
     <div style="bottom: 0; top: 0;"></div>
 </div>
@@ -100,7 +105,7 @@
     <!--<div class="layer1 page">-->
     <!--&lt;!&ndash;<h1 class="float-right">Layer1</h1>&ndash;&gt;-->
     <!--</div>-->
-    <div class="layer0 page">
+    <div class="layer0 page d-none d-xl-block">
         <div class="box-link" style="height:47%;width: 30%; left:154%; top:47%"
              data-toggle="modal" data-target="#event-1">
             <span>Tech Set Go </span>
@@ -119,50 +124,84 @@
         </div>
         <img src="images/full.dev.jpg">
     </div>
+    <div id="mainEvents" class="d-xl-none">
+        <h2 class="pt-5 mb-5">Main Events</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="frame" data-toggle="modal" data-target="#event-1">
+                        <img src="images/challenge.jpg" class="img-thumbnail">
+                        <div class="img-fill"></div>
+                        <div class="img-caption"> Tech Set Go </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="frame" data-toggle="modal" data-target="#event-2">
+                        <img src="images/codestorm.jpg" class="img-thumbnail">
+                        <div class="img-fill"></div>
+                        <div class="img-caption"> CodeStorm </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="frame" data-toggle="modal" data-target="#event-3">
+                        <img src="images/lan-gaming.jpg" class="img-thumbnail">
+                        <div class="img-fill"></div>
+                        <div class="img-caption"> LAN Gaming </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="frame" data-toggle="modal" data-target="#event-4">
+                        <img src="images/techathon.png" class="img-thumbnail">
+                        <div class="img-fill"></div>
+                        <div class="img-caption"> Techathon </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <div id="events2" class="container-fluid pb-5 pt-5">
     <h2 class="mb-5">Other Events</h2>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-6 col-md-4">
                 <div class="frame" data-toggle="modal" data-target="#other-event-1">
                     <img src="images/challenge.jpg" class="img-thumbnail">
                     <div class="img-fill"></div>
                     <div class="img-caption"> Techela Challenge </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-6 col-md-4">
                 <div class="frame" data-toggle="modal" data-target="#other-event-2">
                     <img src="images/carnival.jpg" class="img-thumbnail">
                     <div class="img-fill"></div>
                     <div class="img-caption"> Techela Daily </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-6 col-md-4">
                 <div class="frame" data-toggle="modal" data-target="#other-event-3">
                     <img src="images/mobile-games.jpg" class="img-thumbnail">
                     <div class="img-fill"></div>
                     <div class="img-caption"> Side Events </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
+            <div class="col-6 col-md-4">
                 <div class="frame" data-toggle="modal" data-target="#other-event-4">
                     <img src="images/ctf.jpg" class="img-thumbnail">
                     <div class="img-fill"></div>
                     <div class="img-caption"> Capture The Flag </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-6 col-md-4">
                 <div class="frame" data-toggle="modal" data-target="#other-event-5">
                     <img src="images/rapidcircle.jpg" class="img-thumbnail">
                     <div class="img-fill"></div>
                     <div class="img-caption"> Rapid Circle Workshop </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-6 col-md-4">
                 <div class="frame" data-toggle="modal" data-target="#other-event-6">
                     <img src="images/quizzerium.png" class="img-thumbnail">
                     <div class="img-fill"></div>
@@ -175,11 +214,19 @@
 
 <div id="sponsor" class="pt-5 pb-5">
     <div class="container">
-        <div class="row">
-            <div class="col-10">
-                <h2>Love to Sponsor us ?</h2>
+        <h2 class="mb-5" style="">Sponsors</h2>
+        <div class="row mb-5">
+            <div class="ml-auto col-md-3 mr-auto">
+                <a href="http://emocreation.store"  target="_blank">
+                    <img src="images/sponsors/Emo-Creation-Logo.svg" class="img-thumbnail">
+                </a>
             </div>
-            <div class="col-2">
+        </div>
+        <div class="mt-5 row">
+            <div class="col-md-10">
+                <h3>Love to Sponsor us ?</h3>
+            </div>
+            <div class="col-md-2">
                 <a href="#contact"><button class="btn btn-light btn-lg">Contact Us</button></a>
             </div>
         </div>
@@ -230,12 +277,12 @@
         <div class="col-md-12">
             <div class="social-links">
                 <div class='icon social fb'>
-                    <a href="https://www.facebook.com/techela.16/" target="blank">
+                    <a href="https://www.facebook.com/techela.17/" target="blank">
                         <i class='fa fa-facebook'></i>
                     </a>
                 </div>
                 <div class='icon social tw'>
-                    <a href="https://twitter.com/csit_techela" target="blank">
+                    <a href="https://twitter.com/techela_17" target="blank">
                         <i class='fa fa-twitter'></i>
                     </a>
                 </div>
@@ -246,7 +293,7 @@
                 </div>
 
                 <div class="icon social snap">
-                    <a href="https://www.snapchat.com/add/techela" target="blank">
+                    <a href="https://www.snapchat.com/add/techela_17" target="blank">
                         <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -269,12 +316,15 @@
             <div class="modal-header">
                 <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
                 <h4 class="modal-title"> Techela Challenge </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <p>Roam free fly high,</p>
                 <p>Get yourself a cloud, obviously not one from the sky.</p>
                 <p>Alright friends, get rid of your hard-disks and pen-drive,</p>
-                <p>We will teach you how to create a cloud so you don’t have to strive.</p>
+                <p>We will teach you how to create a cloud so you don't have to strive.</p>
                 <p>Learning cloud computing for you is the best deal.</p>
                 <p>Get rid of the non-portable storage device,</p>
                 <p>Learn how to create a cloud and that should suffice.</p>
@@ -297,6 +347,9 @@
             <div class="modal-header">
                 <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
                 <h4 class="modal-title"> Techela Daily </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <p>Soon Be uploded</p>
@@ -309,31 +362,33 @@
     </div>
 </div>
 
-
 <div class="modal fade" id="other-event-3" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
                 <h4 class="modal-title"> Side Events </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <p><strong>F.R.I.E.N.D.S Booth!</strong></p>
                 <p>
                     A 3 round duet game where two teams will compete at a time. With 3 rounds first round
-                    being, ‘Mini damsharaz’ here the players will get pluck cards with names of
+                    being, ‘Mini damsharaz' here the players will get pluck cards with names of
                     things/objects in them and they will have to tell what it was to their partner the word
                     using phrases/words/sentences(Not saying the word, obviously)/actions this game will
                     go till the time stops (like passing the pass) and the person who has the object at the
                     end, loses.
                 </p>
                 <p>
-                    Second round will be a game of ‘heads up!’ From naming celebrities, to singing, to silly
-                    accents -- guess the word on the card that’s on your head from your friends&#39; clues before
+                    Second round will be a game of ‘heads up!' From naming celebrities, to singing, to silly
+                    accents -- guess the word on the card that's on your head from your friends' clues before
                     the timer runs out!
                 </p>
                 <p>
-                    Third round will be, ‘Whisper Challenge’ a person with headphones will have to guess
+                    Third round will be, ‘Whisper Challenge' a person with headphones will have to guess
                     what his friend is trying to speak!
                 </p>
                 <p><Strong>Pic Walk V2.0</Strong> (Scavenger Hunt)</p>
@@ -363,6 +418,9 @@
             <div class="modal-header">
                 <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
                 <h4 class="modal-title"> Capture The Flag </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <p>It is arena of cyber world where noobs fight to become l337s!.</p>
@@ -370,7 +428,7 @@
                 <p>This competition who shall win more flags and become rulers of cyber world</p>
                 <p>Will noobs survive basis on their techincal skills and programming languages or
                     the l337,who are masters of experience in skills of cyber attacks.</p>
-                <p>It&#39;s privilege to see who become the new ruler cyber world.</p>
+                <p>It's privilege to see who become the new ruler cyber world.</p>
 
                 <div class="head-detail">
                     <p>Head : Aditya Lohia</p>
@@ -386,7 +444,10 @@
         <div class="modal-content">
             <div class="modal-header">
                 <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
-                <h4 class="modal-title"> Rapid Fire Workshop </h4>
+                <h4 class="modal-title"> Rapid CIrcle Workshop </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <p>Get your laptops ready to be a part of something evolutionary</p>
@@ -411,6 +472,9 @@
             <div class="modal-header">
                 <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
                 <h4 class="modal-title"> Chronos Quizzerium </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <p>Personification of time. Yes you read right,</p>
@@ -423,12 +487,12 @@
 
                 <p>Enthralling features
                     -double points for correct answer
-                    -also candidates can snip points by countering other teams question provided they can’t
-                    or they don’t
+                    -also candidates can snip points by countering other teams question provided they can't
+                    or they don't
                     have appropriate response for it.
                 </p>
                 <p>
-                    Be ready. Be smart. Be noticed…………….. and unlock knowledge at speed of thought.
+                    Be ready. Be smart. Be noticed... and unlock knowledge at speed of thought.
                 </p>
                 <div class="head-detail">
                     <p>Head : Jay & Aditya Maheshwari</p>
@@ -448,13 +512,16 @@
             <div class="modal-header">
                 <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
                 <h4 class="modal-title"> Techset Go </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
-                <p>“Not all Treasure is gold and silver!”</p>
-                <p>  Hence, we present you ‘TechSetGo’ a treasure hunt game for the       tech-savvy.
+                <p>Not all Treasure is gold and silver!�</p>
+                <p>  Hence, we present you ‘TechSetGo' a treasure hunt game for the       tech-savvy.
                     The game is divided into various levels. Participants who are in lead would progress to
                     the higher levels.</p>
-                <p>  “Sometimes it’s the journey that teaches you a lot more about
+                <p>  “Sometimes it's the journey that teaches you a lot more about
                     your destination “</p>
                 <p> So, the game takes the players through a journey .No thief,
                     however skillful, can rob one of knowledge
@@ -482,6 +549,9 @@
             <div class="modal-header">
                 <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
                 <h4 class="modal-title"> Code Storm </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <p>Welcome to our favorite playground</p>
@@ -506,23 +576,26 @@
             <div class="modal-header">
                 <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
                 <h4 class="modal-title"> Lan Gaming </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <p>Hi kids, do you like violence?</p>
                 <p>
                     Can you load your gun, aim, shoot &amp; be silent,
                     Or drive race around, full speed, no mileage,
-                    Yes this LAN gaming- you’ve got to come try it.
+                    Yes this LAN gaming- you've got to come try it.
                 </p>
                 <p>
-                    If all this is music to your ears then you belong right here, my friend, at Techela’s
+                    If all this is music to your ears then you belong right here, my friend, at Techela's
                     ultimate LAN-Gaming arcade that is immolation for the maniacs who crave for more
                     than just reality.
                 </p>
                 <p>
                     FIFA, COD, Need for Speed, DOTA, its all here. Counter-Strike Go is the most popular -
-                    consequently the bar for this game is set very high. It’s simple the moment you blink,
-                    you die. Then here&#39;s FIFA&#39;17 for football freaks. Can&#39;t play it on the field? So what!
+                    consequently the bar for this game is set very high. It's simple the moment you blink,
+                    you die. Then here's FIFA'17 for football freaks. Can't play it on the field? So what!
                     Experience it virtually and feel the same pressure that players experience on the field.
                 </p>
                 <p>
@@ -531,15 +604,15 @@
                     year.
                 </p>
                 <p>
-                    And for those of you who love to ride monsters and rule the roads, we’ve got these
+                    And for those of you who love to ride monsters and rule the roads, we've got these
                     events too! Take advantage of this golden opportunity and play NFS &amp; BLUR. Prove that
-                    you are the king and if it’s not enough then through games like DOTA and AOE II you
+                    you are the king and if it's not enough then through games like DOTA and AOE II you
                     can show your strategy skills.
                 </p>
                 <p>
                     It is going to be one hell of a ride full of excitement, pressure and perseverance where
-                    the best of the best gaming pros go at it. It’s a feeling none less than being on
-                    tenterhooks, and we bet you&#39;ll love it.
+                    the best of the best gaming pros go at it. It's a feeling none less than being on
+                    tenterhooks, and we bet you'll love it.
                 </p>
                 <div class="head-detail">
                     <p>Head : Divyansh , Sahil , Zain, Prashant</p>
@@ -556,24 +629,27 @@
             <div class="modal-header">
                 <!--button type="button" class="close" data-dismiss="modal">&times;</button-->
                 <h4 class="modal-title"> Techathon </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <p><Strong>Normal Description:</Strong></p>
-                <p>Techathon is a multilevel event, it&#39;s a perfect mixture of games and technology. The levels are based on the period of time and the tech which was used in that period.</p>
+                <p>Techathon is a multilevel event, it's a perfect mixture of games and technology. The levels are based on the period of time and the tech which was used in that period.</p>
                 <p>Imagine a transition from mario to fifa 17.</p>
 
                 <p><Strong>Proposed Event Description:</Strong>
 
-                <p>Are you up for a challenge? It&#39;s Gonna Be a Blast!</p>
-                 
+                <p>Are you up for a challenge? It's Gonna Be a Blast!</p>
+                
                 <p>Welcome to Techathon</p>
                 <p>Techathon is a multilevel event based on coalition of technology and gaming.
                     There are 3 levels. Each consisting of tasks
                     The scores will be evaluated based on your performance and thinking.</p>
-                                    <p>
+                                   <p>
                 1
                 --
-                Based on 1990&#39;s 
+                Based on 1990's
                 Your favourite old school games such as RoadRash and more! 
                 Rival with friends and people to Jockey for position! 
             </p>
@@ -589,11 +665,11 @@
                     3
                     --
                     Last but not least! Cloud computing.
-                    Don&#39;t worry! &#39;THE BEST PART&#39; about Cloud computing is you don&#39;t need to know about
+                    Don't worry! 'THE BEST PART' about Cloud computing is you don't need to know about
                     coding.
                 </p>
                 <p>
-                    We&#39;ll teach you about the cloud and how to design one.
+                    We'll teach you about the cloud and how to design one.
                     After designing tell your friends to join your cloud.
                     The more the members the higher your scores!
                 </p>
@@ -605,6 +681,7 @@
         </div>
     </div>
 </div>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/jquery.gsap.min.js"></script>
 <!--<script src="js/rainbowbrush.js"></script>-->

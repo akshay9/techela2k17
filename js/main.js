@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     var logoTimeline = new TimelineMax()
         .to("#home .logo", 0.5,  {left: "5", position: "fixed", ease: Power3.easeOut }, 0)
-        .to("#home .logo", 0.5,  {top: "5" }, 0)
+        .to("#home .logo", 0.5,  {top: "5", opacity: 1 }, 0)
         .to("#home .logo img", 0.5,  {'max-height': "85" }, 0)
         .to("#home .description", 0.5,  {width: "0", opacity:0 }, 0)
         .to("#register-btn", 0.5,  {opacity:0 }, 0)

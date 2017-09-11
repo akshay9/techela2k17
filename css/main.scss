@@ -112,6 +112,7 @@ body {
     .logo {
       opacity: 0;
       .description {
+        margin-top: 0px;
         display: none;
       }
     }
@@ -133,6 +134,7 @@ body {
       max-height: 150px;
     }
     .description {
+      margin-top: -25px;
       font-family: 'Open Sans Condensed', sans-serif;
       color: #ebebeb;
       position: relative;
@@ -152,7 +154,7 @@ body {
     }
   #register-btn {
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 43.5%;
     .btn {
       width: 230px;

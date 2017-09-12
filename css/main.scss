@@ -141,7 +141,7 @@ body {
       overflow-x: hidden;
       white-space: nowrap;
       h1 {
-        margin-top: -15px;
+        //margin-top: -5px;
         font-size: 3.5em;
         font-family: 'batmFont', sans-serif;
         //font-family: 'Courgette', cursive;
@@ -154,7 +154,7 @@ body {
     }
   #register-btn {
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 43.5%;
     .btn {
       width: 230px;

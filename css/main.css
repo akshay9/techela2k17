@@ -86,7 +86,7 @@ body {
   #home .logo {
     position: fixed;
     top: 20%;
-    left: 38%;
+    left: 36%;
     text-align: center;
     z-index: 10000; }
     #home .logo img {
@@ -100,7 +100,7 @@ body {
       white-space: nowrap; }
       #home .logo .description h1 {
         margin-top: -15px;
-        font-size: 3em;
+        font-size: 3.5em;
         font-family: 'batmFont', sans-serif;
         color: white; }
       #home .logo .description h3 {

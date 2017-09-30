@@ -19,8 +19,10 @@ body {
   z-index: -1;
   /* Remove this line if it's not going to be a background! */ }
 
-.page, #home, #events {
-  min-height: 100vh; }
+.page {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%; }
 
 .box-link {
   position: absolute;
@@ -50,6 +52,7 @@ body {
     transition: all 0.2s ease-in-out; }
 
 #home {
+  min-height: 100vh;
   box-shadow: 0px 5px 9px 0px #b1afaf;
   background-color: #111; }
   @media (min-width: 768px) {
@@ -129,9 +132,17 @@ body {
       max-height: 35px; }
 
 #events {
+  min-height: 100vh;
   background-color: #212529;
   box-shadow: 0px 5px 9px 0px #1b1e21; }
   #events .layer0 img {
+    z-index: 1;
+    height: 100vh; }
+  #events .layer1 img {
+    z-index: 2;
+    height: 100vh; }
+  #events .layer2 img {
+    z-index: 3;
     height: 100vh; }
 
 #mainEvents, #events2 {
@@ -251,7 +262,6 @@ body {
     color: #fff; }
   #footer .icon.social {
     float: left;
-    margin: 0 5px 0 0;
     cursor: pointer;
     background: #6d6e71;
     margin: 0 8px;

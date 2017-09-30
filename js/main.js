@@ -34,23 +34,34 @@ $(document).ready(function(){
         //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
         .addTo(controller);
 
+    function widthpercent(widthpx) {
+        newwidth = widthpx * (window.innerHeight / 1080);
+        newpages = (newwidth / window.innerWidth) -1;
+        return "-" + (newpages * 100) + "%";
+    }
+
     new_width = 16670 / (1080 / window.innerHeight);
     pages = (new_width/window.innerWidth) - 1;
 
+    // var eventsTimeline = new TimelineMax()
+    //     // .fromTo(".layer3.page", 4, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0) // in from left
+    //     // .fromTo(".layer2.page", 3, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0)  // in from right
+    //     // .fromTo(".layer1.page", 2, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0)
+    //     // .fromTo(".layer0.page", 4, {x: "0%"}, {x: "-630%", ease: Linear.easeNone}, 0);
+    //     .fromTo(".layer0.page", 4, {x: "0%"}, {x: "-" + (pages * 100) +"%", ease: Linear.easeNone}, 0);
+    //     // .fromTo(".layer0.page", 4, {x: "0%"}, {x: (-16670+window.innerWidth) + "", ease: Linear.easeNone}, 0);
+
     var eventsTimeline = new TimelineMax()
-        // .fromTo(".layer3.page", 4, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0) // in from left
-        // .fromTo(".layer2.page", 3, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0)  // in from right
-        // .fromTo(".layer1.page", 2, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}, 0)
-        // .fromTo(".layer0.page", 4, {x: "0%"}, {x: "-630%", ease: Linear.easeNone}, 0);
-        .fromTo(".layer0.page", 4, {x: "0%"}, {x: "-" + (pages * 100) +"%", ease: Linear.easeNone}, 0);
-        // .fromTo(".layer0.page", 4, {x: "0%"}, {x: (-16670+window.innerWidth) + "", ease: Linear.easeNone}, 0);
+        .fromTo(".layer0.page", 4, { x: "0%" }, { x: widthpercent(12503), ease: Linear.easeNone}, 0)
+        .fromTo(".layer1.page", 4, { x: "0%" }, { x: widthpercent(16670), ease: Linear.easeNone }, 0)
+        .fromTo(".layer2.page", 4, { x: "0%" }, { x: widthpercent(20164), ease: Linear.easeNone }, 0);
 
     if(window.innerWidth > 1200) {
 
         var eventsScene = new ScrollMagic.Scene({
             triggerElement: "#events",
             triggerHook: "onLeave",
-            duration: "400%"
+            duration: "800%"
         })
             .setPin("#events")
             // .setClassToggle("#eventLink", "active")

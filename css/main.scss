@@ -40,8 +40,9 @@ body {
 }
 
 .page {
+  position: absolute;
   min-height: 100vh;
-  //width: 100%;
+  width: 100%;
 }
 .box-link {
   position: absolute;
@@ -74,7 +75,7 @@ body {
 }
 
 #home {
-  @extend .page;
+  min-height: 100vh;
   box-shadow: 0px 5px 9px 0px rgb(177, 175, 175);
   background-color: #111;
   @media (min-width: 768px) {
@@ -151,7 +152,7 @@ body {
         font-size: 2.7em;
       }
     }
-    }
+  }
   #register-btn {
     position: absolute;
     top: 60%;
@@ -188,12 +189,23 @@ body {
 }
 
 #events {
-  @extend .page;
+  min-height: 100vh;
   background-color: #212529;
   box-shadow: 0px 5px 9px 0px #1b1e21;
-  .layer0  img {
-    height:100vh;
-    //height:638px;
+
+  .layer0 img {
+    z-index: 1;
+    height: 100vh;
+  }
+
+  .layer1 img {
+    z-index: 2;
+    height: 100vh;
+  }
+
+  .layer2 img {
+    z-index: 3;
+    height: 100vh;
   }
 }
 
@@ -212,7 +224,7 @@ body {
   .frame {
     margin-top: .5rem!important;
     overflow: hidden;
-	cursor: pointer;
+    cursor: pointer;
 
     img {
       max-height: 100%;
@@ -354,7 +366,6 @@ body {
   }
   .icon.social {
     float:left;
-    margin:0 5px 0 0;
     cursor:pointer;
     background:#6d6e71 ;
     margin: 0 8px;
@@ -556,30 +567,30 @@ body {
 /* jInvertScrol.js end */
 
 .hvr-grow-shadow {
-    padding: 15px 30px;
-    background-color: #009fee;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 400;
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: all;
-    transition-property: all;
+  padding: 15px 30px;
+  background-color: #009fee;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
-    color: #202427;
-    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.65);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+  color: #202427;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.65);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }

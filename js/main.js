@@ -54,7 +54,7 @@ $(document).ready(function(){
     var eventsTimeline = new TimelineMax()
         .fromTo(".layer0.page", 4, { x: "0%" }, { x: widthpercent(12503), ease: Linear.easeNone}, 0)
         .fromTo(".layer1.page", 4, { x: "0%" }, { x: widthpercent(16670), ease: Linear.easeNone }, 0)
-        .fromTo(".layer2.page", 4, { x: "0%" }, { x: widthpercent(20164), ease: Linear.easeNone }, 0);
+        .fromTo(".layer2.page", 4, { x: "0%" }, { x: widthpercent(25064), ease: Linear.easeNone }, 0);
 
     if(window.innerWidth > 1200) {
 

@@ -110,6 +110,13 @@ $(document).ready(function(){
         }
     });
 
+    $(".box-link").each(function (e) {
+        var leftspan = $(this).attr("data-leftspan");
+        newwidth = leftspan * (window.innerHeight / 1080);
+        newpages = (newwidth / window.innerWidth);
+        $(this).css("left", (newpages * 100) + "%");
+    })
+
     // page = 0;
     //
     // adjustWidth();
